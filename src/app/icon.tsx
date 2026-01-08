@@ -7,14 +7,14 @@ export const size = {
     width: 32,
     height: 32,
 };
-export const contentType = "image/png";
+export const contentType = "image/jpeg";
 
 // Image generation
 export default function Icon() {
     // Read the source image from public directory
-    const filePath = join(process.cwd(), "public", "Milly_AI_Bot_Icon.png");
+    const filePath = join(process.cwd(), "public", "favicon_website.jpg");
     const fileBuffer = readFileSync(filePath);
-    const imageSrc = `data:image/png;base64,${fileBuffer.toString("base64")}`;
+    const imageSrc = `data:image/jpeg;base64,${fileBuffer.toString("base64")}`;
 
     return new ImageResponse(
         (
