@@ -48,7 +48,7 @@ const Footer = () => {
                         {[
                             { name: "GitHub", icon: FaGithub, href: "https://github.com/Nisar999" }, 
                             { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/in/nisarg-chauhan-63164925b/" },
-                            { name: "X", icon: FaTwitter, href: "https://x.com/NisargChau31277" },
+                            { name: "Twitter", icon: FaTwitter, href: "https://x.com/NisargChau31277" },
                         ].map((social) => (
                             <li key={social.name}>
                                 <a
