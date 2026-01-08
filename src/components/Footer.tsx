@@ -46,9 +46,9 @@ const Footer = () => {
                     </h4>
                     <ul className="space-y-3">
                         {[
-                            { name: "GitHub", icon: FaGithub, href: "https://github.com/nisarg" }, // Replace with actual links
-                            { name: "LinkedIn", icon: FaLinkedin, href: "https://linkedin.com/in/nisarg" },
-                            { name: "Twitter", icon: FaTwitter, href: "https://twitter.com/nisarg" },
+                            { name: "GitHub", icon: FaGithub, href: "https://github.com/Nisar999" }, 
+                            { name: "LinkedIn", icon: FaLinkedin, href: "https://www.linkedin.com/in/nisarg-chauhan-63164925b/" },
+                            { name: "X", icon: FaTwitter, href: "https://x.com/NisargChau31277" },
                         ].map((social) => (
                             <li key={social.name}>
                                 <a
