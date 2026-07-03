@@ -3,6 +3,8 @@ import About from "@/components/About";
 
 import SkillsConstellation from "@/components/SkillsConstellation";
 import Experience from "@/components/Experience";
+import Publications from "@/components/Publications";
+import CommunityEngagement from "@/components/CommunityEngagement";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
@@ -34,30 +36,46 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <nav role="navigation" aria-label="Main navigation">
+        <Navbar />
+      </nav>
       <ScrollProgress />
-      <div id="hero">
+      <section id="hero" aria-label="Hero introduction section">
         <Hero />
-      </div>
-      <div id="about">
+      </section>
+      <section id="about" aria-label="About section">
         <About />
-      </div>
-      <SkillsConstellation />
-      <div id="experience">
+      </section>
+      <section aria-label="Skills section">
+        <SkillsConstellation />
+      </section>
+      <section id="experience" aria-label="Experience and employment timeline">
         <Experience />
-      </div>
-      <Education />
-      <Certifications />
-      <div id="projects">
+      </section>
+      <section id="publications" aria-label="Publications and research">
+        <Publications />
+      </section>
+      <section id="community" aria-label="Community engagement and volunteer work">
+        <CommunityEngagement />
+      </section>
+      <section aria-label="Education">
+        <Education />
+      </section>
+      <section aria-label="Certifications">
+        <Certifications />
+      </section>
+      <section id="projects" aria-label="Featured projects and portfolio work">
         <Projects />
-      </div>
-      <div id="journey">
+      </section>
+      <section id="journey" aria-label="Photo gallery of events and milestones">
         <Journey images={journeyImages} />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact" aria-label="Contact and reach out section">
         <Contact />
-      </div>
-      <Footer />
+      </section>
+      <footer>
+        <Footer />
+      </footer>
       <ChatLoader />
     </>
   );

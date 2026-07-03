@@ -34,8 +34,8 @@ export default function About() {
                 >
                     <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
                         <Image
-                            src="/Nisarg_about.png"
-                            alt={identity.name}
+                            src="/About_image.jpg"
+                            alt={`${identity.name}, AI Engineer focused on Generative AI and Computer Vision, professional portrait`}
                             width={500}
                             height={500}
                             className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
@@ -93,6 +93,7 @@ export default function About() {
                         href="/resume.pdf"
                         target="_blank"
                         className="inline-flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
+                        aria-label="Download Nisarg's CV as PDF"
                     >
                         <FaDownload />
                         Download CV

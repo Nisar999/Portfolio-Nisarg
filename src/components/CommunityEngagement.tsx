@@ -1,11 +1,11 @@
 "use client";
 
-import { experience } from "@/lib/data";
+import { communityEngagement } from "@/lib/data";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import OptimizedImage from "./OptimizedImage";
 import { useRef } from "react";
 
-export default function Experience() {
+export default function CommunityEngagement() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -20,7 +20,7 @@ export default function Experience() {
 
   return (
     <section ref={containerRef} className="py-24 max-w-4xl mx-auto px-6 relative">
-      <h2 className="text-3xl font-semibold mb-12">Experience</h2>
+      <h2 className="text-3xl font-semibold mb-12">Community Engagement</h2>
 
       {/* Continuous Timeline Beam */}
       <div className="absolute left-[39px] top-32 bottom-24 w-0.5 bg-white/10 hidden md:block">
@@ -31,7 +31,7 @@ export default function Experience() {
       </div>
 
       <div className="space-y-12">
-        {experience.map((group, i) => (
+        {communityEngagement.map((group, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, x: -20 }}
@@ -49,7 +49,7 @@ export default function Experience() {
               <div className="relative w-12 h-12 flex-shrink-0 bg-white rounded-lg overflow-hidden shadow-lg shadow-blue-500/10 group-hover:shadow-blue-500/20 transition-all">
                 <OptimizedImage
                   src={group.logo}
-                  alt={`${group.org} company logo`}
+                  alt={`${group.org} organization logo`}
                   fill
                   className="object-contain p-1"
                   priority={false}
