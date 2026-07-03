@@ -48,7 +48,9 @@ export default function RootLayout({
           <Preloader />
           <NoiseOverlay />
           <SmoothScroll>
-            {children}
+            <main>
+              {children}
+            </main>
           </SmoothScroll>
         </LoadingProvider>
       </body>

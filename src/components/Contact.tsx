@@ -88,6 +88,7 @@ export default function Contact() {
               <a
                 href={`mailto:${identity.emailStart}`}
                 className="group flex items-center gap-3 bg-[var(--purple)] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[var(--blue)] transition-all transform hover:scale-105 shadow-lg shadow-purple-500/25"
+                aria-label="Send email to Nisarg"
               >
                 <FaPaperPlane className="text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
                 <span>Say Hello</span>
@@ -104,7 +105,7 @@ export default function Contact() {
                   <button
                     onClick={() => copyToClipboard(email)}
                     className="text-gray-500 hover:text-white transition-colors p-2 relative"
-                    aria-label="Copy email"
+                    aria-label={`Copy ${email} to clipboard`}
                   >
                     <AnimatePresence mode='wait'>
                       {copied === email ? (

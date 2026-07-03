@@ -78,7 +78,7 @@ function MarqueeContent({
                 >
                     <Image
                         src={img}
-                        alt={`Journey moment`}
+                        alt={`Event and conference memory from journey, showing attendees and community engagement moments`}
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-700"
                         sizes="(max-width: 768px) 400px, 500px"

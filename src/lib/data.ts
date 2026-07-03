@@ -9,7 +9,74 @@ export const identity = {
   emailIEEE: "nisargchauhan777888@ieee.org",
 };
 
+export const publications = [
+  {
+    title: "Integrated 4D Clinical Computational Taxonomy and Translation Roadmap for GAN-Based MRI Super-Resolution",
+    doi: "10.1109/ICVADV67766.2026.11469834",
+    link: "https://ieeexplore.ieee.org/document/11469834",
+    publishedIn: "IEEE Xplore",
+    indexedIn: "Scopus",
+  },
+  {
+    title: "A Validated 4D Clinical-Computational Taxonomy and Translation Framework for GAN-Based MRI Super-Resolution",
+    doi: "10.1109/ICSMILE69273.2026.11519125",
+    link: "https://ieeexplore.ieee.org/document/11519125",
+    publishedIn: "IEEE Xplore",
+    indexedIn: "Scopus",
+  },
+  {
+    title: "Hierarchical Privacy-Preserving Federated Intrusion Detection for 6G Edge Networks",
+    doi: "10.1109/RMKMATE69073.2026.11518859",
+    link: "https://ieeexplore.ieee.org/document/11518859",
+    publishedIn: "IEEE Xplore",
+    indexedIn: "Scopus",
+  },
+];
+
 export const experience = [
+  {
+    org: "Sahana System Limited",
+    logo: "/Experience/sahanasystemltd_logo.jpg",
+    roles: [
+      {
+        title: "AI/ML Intern",
+        time: "Jan 2026 – Jun 2026",
+      },
+    ],
+  },
+  {
+    org: "Sahana System Limited",
+    logo: "/Experience/sahanasystemltd_logo.jpg",
+    roles: [
+      {
+        title: "Data Management Intern",
+        time: "Jun 2024 – Jul 2024",
+      },
+    ],
+  },
+  {
+    org: "Batwebs.com",
+    logo: "/Experience/BATwebs_Solutions_logo.jpg",
+    roles: [
+      {
+        title: "Data Science with Machine Learning Intern",
+        time: "Dec 2023 – Jan 2024",
+      },
+    ],
+  },
+];
+
+export const communityEngagement = [
+  {
+    org: "IEEE Signal Processing Society",
+    logo: "/Experience/ieee_signal_processing_society_logo.jpg",
+    roles: [
+      {
+        title: "IEEE SPS Ambassador",
+        time: "Jan 2025 – Present",
+      },
+    ],
+  },
   {
     org: "Silver Oak University IEEE Student Branch",
     logo: "/Experience/IEEESOUSB_logo.jpg",
@@ -37,48 +104,16 @@ export const experience = [
     ],
   },
   {
-    org: "AWS Cloud Club at Silver Oak University",
-    logo: "/Experience/AWS_CC_SOU_logo.jpg",
+    org: "AWS Student Builder Group at Silver Oak University",
+    logo: "/Experience/AWS_SBG_SOU_logo.jpg",
     roles: [
       {
-        title: "Cloud Captain",
-        time: "May 2025 – Present",
-      },
-    ],
-  },
-  {
-    org: "IEEE Signal Processing Society",
-    logo: "/Experience/ieee_signal_processing_society_logo.jpg",
-    roles: [
-      {
-        title: "IEEE SPS Ambassador",
-        time: "Jan 2025 – Present",
-      },
-    ],
-  },
-  {
-    org: "Sahana System Limited",
-    logo: "/Experience/sahanasystemltd_logo.jpg",
-    roles: [
-      {
-        title: "Data Management Intern",
-        time: "Jun 2024 – Jul 2024",
-      },
-    ],
-  },
-  {
-    org: "Batwebs.com",
-    logo: "/Experience/BATwebs_Solutions_logo.jpg",
-    roles: [
-      {
-        title: "Data Science with Machine Learning Intern",
-        time: "Dec 2023 – Jan 2024",
+        title: "Student Builder Group Leader",
+        time: "May 2025 – May 2026",
       },
     ],
   },
 ];
-
-
 
 export const certifications = [
   {
@@ -161,21 +196,35 @@ export const projects = [
     ],
   },
   {
-    title: "Face Detection and Recognition",
-    desc: "Detects and Identifies human face through pretrained computer vision models.",
+    title: "Netra: Detection and Recognition System",
+    desc: "It is a full-stack, real-time face recognition and attendance monitoring system designed for multi-camera environments.",
     tags: [
-      { name: "Deepface", url: "https://github.com/serengil/deepface" },
-      { name: "OpenCV", url: "https://opencv.org/" },
+      { name: "Javascipt", url: "https://devdocs.io/javascript/" },
+      { name: "CSS", url: "https://devdocs.io/css/" },
+      { name: "Node.js", url: "https://nodejs.org/" },
+      { name: "React", url: "https://react.dev/" },
+      { name: "Vite", url: "https://vite.dev/guide/" },
+      { name: "Python", url: "https://python.org" },
+      { name: "Dockerfile", url: "https://docs.docker.com/reference/dockerfile/" },
     ],
   },
   {
     title: "Certificate Managment Platform",
-    desc: "Build a platform where certificates can be bulk generated along with certificate id generation and mass mailer.",
+    desc: "A platform where certificates can be bulk generated along with id generation and mass mailing modules.",
     tags: [
       { name: "Node.js", url: "https://nodejs.org/" },
       { name: "React", url: "https://react.dev/" },
       { name: "Python", url: "https://python.org" },
       { name: "GCP", url: "https://cloud.google.com/" },
+    ],
+  },
+  {
+    title: "AI Career Mentor",
+    desc: "A input based counsellor for knowledge and career guidance.",
+    tags: [
+      { name: "Next.js", url: "https://nextjs.org/" },
+      { name: "Javascipt", url: "https://devdocs.io/javascript/" },
+      { name: "CSS", url: "https://devdocs.io/css/" },
     ],
   },
   {
@@ -189,7 +238,7 @@ export const education = [
   {
     institution: "Silver Oak University",
     degree: "Bachelor's of Technology in Computer Engineering (ML & AI)",
-    time: "May 2022 – Jun 2026",
+    time: "May 2022 – May 2026",
   },
   {
     institution: "Krishna School of Science, Gandhinagar",

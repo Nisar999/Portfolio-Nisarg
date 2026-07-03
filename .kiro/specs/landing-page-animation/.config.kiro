@@ -1,0 +1,21 @@
+{
+  "specName": "landing-page-animation",
+  "displayName": "Landing Page Spaceship Animation",
+  "description": "Spaceship intro animation that plays on page load with smoke trail effect",
+  "specType": "feature",
+  "workflowType": "requirements-first",
+  "createdAt": "2026-07-04T00:00:00Z",
+  "phase": "6-finalization",
+  "status": "ready-for-implementation",
+  "tags": ["animation", "landing-page", "performance", "ux"],
+  "documentRefs": {
+    "requirements": "requirements.md",
+    "design": "design.md",
+    "tasks": "tasks.md"
+  },
+  "externalResources": {
+    "headerImage": "public/header.png",
+    "outputVideo": "public/animations/spaceship-intro.mp4",
+    "pythonScript": "scripts/generate_animation.py"
+  }
+}

@@ -5,9 +5,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLoading } from "@/context/LoadingContext";
 
 export default function Preloader() {
-    const { isLoading, setIsLoading } = useLoading();
+    const { isLoading, setIsLoading, isMounted } = useLoading();
 
     useEffect(() => {
+        // Only start animation after hydration is complete
+        if (!isMounted) {
+            return;
+        }
+
         // Disable scrolling
         document.body.style.overflow = "hidden";
 
@@ -17,7 +22,7 @@ export default function Preloader() {
         }, 2500);
 
         return () => clearTimeout(timeout);
-    }, [setIsLoading]);
+    }, [isMounted, setIsLoading]);
 
     useEffect(() => {
         if (!isLoading) {

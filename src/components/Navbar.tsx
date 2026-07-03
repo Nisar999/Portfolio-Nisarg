@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
     { name: "About Me", to: "about" },
     { name: "Experience", to: "experience" },
+    { name: "Community", to: "community" },
     { name: "Projects", to: "projects" },
     { name: "Journey", to: "journey" },
     { name: "Contact", to: "contact" },
@@ -44,6 +45,8 @@ export default function Navbar() {
             style={{
                 maxWidth: scrolled ? "100%" : "1152px", // Constraints max width in capsule mode
             }}
+            role="navigation"
+            aria-label="Main navigation"
         >
             <div className={`flex justify-between items-center w-full px-6 gap-12 ${scrolled ? "max-w-6xl mx-auto" : ""}`}>
                 <ScrollLink
@@ -51,11 +54,12 @@ export default function Navbar() {
                     smooth={true}
                     duration={500}
                     className="text-xl font-bold font-mono text-white cursor-pointer hover:text-[var(--blue)] transition-colors"
+                    aria-label="Nisarg AI - Home"
                 >
                     Nisarg.ai
                 </ScrollLink>
 
-                <div className="flex gap-8">
+                <div className="flex gap-8" role="list">
                     {navLinks.map((link) => (
                         <ScrollLink
                             key={link.name}
@@ -64,6 +68,8 @@ export default function Navbar() {
                             duration={500}
                             offset={-100}
                             className="text-sm font-medium text-white hover:text-[var(--purple)] cursor-pointer transition-colors relative group"
+                            aria-label={`Navigate to ${link.name}`}
+                            role="listitem"
                         >
                             {link.name}
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--purple)] group-hover:w-full transition-all duration-300" />
