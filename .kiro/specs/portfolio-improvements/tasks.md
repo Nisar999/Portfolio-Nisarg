@@ -112,7 +112,7 @@ This plan breaks down the portfolio improvements into actionable implementation 
   - Save messages after every send/receive
   - _Requirements: 4.1, 4.2, 4.3_
 
-- [~] 3.3 Implement typing indicators in ChatWidget
+- [ ] 3.3 Implement typing indicators in ChatWidget
   - The existing loading state already shows typing indicator
   - Verify typing indicator displays while API processes
   - Add accessibility announcements for typing indicator
@@ -127,7 +127,7 @@ This plan breaks down the portfolio improvements into actionable implementation 
   - Show connection check suggestion on repeated failures
   - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5_
 
-- [~] 3.5 Add message status tracking
+- [ ] 3.5 Add message status tracking
   - Update ChatMessage interface to include status field
   - Show "pending" status while sending
   - Update to "sent" on success or "error" on failure
@@ -201,21 +201,21 @@ This plan breaks down the portfolio improvements into actionable implementation 
   - Set priority={false} (default) for below-fold images
   - _Requirements: 7.1, 7.2, 7.3_
 
-- [~] 4.5 Add image optimization configuration to next.config.ts
+- [ ] 4.5 Add image optimization configuration to next.config.ts
   - Configure Next.js Image for WebP with JPEG fallback
   - Set image size constraints (max 200KB thumbnails, 500KB hero)
   - Configure image caching headers
   - Enable blur placeholder for images
   - _Requirements: 7.1, 7.4, 7.5_
 
-- [~] 4.6 Create LazySection component for below-fold sections
+- [ ] 4.6 Create LazySection component for below-fold sections
   - Create new file `src/components/LazySection.tsx`
   - Implement Intersection Observer for scroll detection
   - Accept children and optional fallback/placeholder
   - Render only when section becomes visible
   - _Requirements: 9.2, 9.3, 9.4_
 
-- [~] 4.7 Update component imports to use code splitting for heavy components
+- [ ] 4.7 Update component imports to use code splitting for heavy components
   - Use Next.js dynamic imports for components not critical on load
   - Apply dynamic import to Certifications, Publications, Projects
   - Add loading fallback UI
@@ -255,49 +255,49 @@ This plan breaks down the portfolio improvements into actionable implementation 
 
 ### Phase 5: Integration and Final Testing
 
-- [~] 5.1 Run full test suite
+- [ ] 5.1 Run full test suite
   - Run all unit tests
   - Run all property tests
   - Run all integration tests
   - Verify no test failures or warnings
   - _Requirements: 1.1, 2.1, 4.1, 7.1, 8.1_
 
-- [~] 5.2 Run Lighthouse audit and accessibility checks
+- [ ] 5.2 Run Lighthouse audit and accessibility checks
   - Run Lighthouse in Chrome DevTools
   - Target: Performance > 85, Accessibility > 95, Best Practices > 90
   - Run axe accessibility audit
   - Fix any remaining critical issues
   - _Requirements: 2.1, 2.2, 3.1, 3.2, 3.3, 7.1, 8.1_
 
-- [~] 5.3 Test on multiple browsers and devices
+- [ ] 5.3 Test on multiple browsers and devices
   - Test on Chrome, Firefox, Safari desktop
   - Test on mobile (iOS Safari, Chrome Mobile)
   - Verify no visual regressions
   - Verify chat widget works on mobile
   - _Requirements: All_
 
-- [~] 5.4 Test keyboard and screen reader navigation
+- [ ] 5.4 Test keyboard and screen reader navigation
   - Test Tab navigation through entire page
   - Test screen reader with NVDA/JAWS simulator
   - Verify all interactive elements are announced
   - Verify focus indicators are visible
   - _Requirements: 3.1, 3.2, 3.3, 3.5, 3.6_
 
-- [~] 5.5 Final integration verification
+- [ ] 5.5 Final integration verification
   - Verify hydration fixes don't break chat persistence
   - Verify accessibility improvements work with performance optimizations
   - Verify chat widget enhancements work after lazy loading
   - Ensure all components work together cohesively
   - _Requirements: 1.1, 3.1, 4.1, 7.1, 8.1, 10.1, 10.2, 10.3, 10.4, 10.5_
 
-- [~] 5.6 Documentation and code cleanup
+- [ ] 5.6 Documentation and code cleanup
   - Add JSDoc comments to all new hooks and components
   - Document motion preference usage pattern
   - Document chat persistence lifecycle
   - Update README with accessibility features
   - _Requirements: All_
 
-- [~] 5.7 Final checkpoint - All improvements complete
+- [ ] 5.7 Final checkpoint - All improvements complete
   - Verify no console errors or warnings
   - Verify all requirements are implemented
   - Verify Lighthouse scores are acceptable
