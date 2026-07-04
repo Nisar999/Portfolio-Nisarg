@@ -4,11 +4,11 @@ import { certifications } from "@/lib/data";
 import SpotlightCard from "@/components/SpotlightCard";
 import { motion } from "framer-motion";
 import { FaAward, FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { SiGooglecloud, SiAmazonwebservices } from "react-icons/si";
+import { SiGooglecloud } from "react-icons/si";
 
 const iconMap: Record<string, React.ReactNode> = {
     "Google Cloud": <SiGooglecloud className="text-yellow-400" />,
-    "Amazon Web Services": <SiAmazonwebservices className="text-orange-400" />,
+    "Amazon Web Services": <FaAward className="text-orange-400" />,
     "AI CERT™": <FaAward className="text-blue-400" />,
 };
 

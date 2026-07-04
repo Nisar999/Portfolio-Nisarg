@@ -3,13 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMotionPreference } from "@/hooks";
-import dynamic from "next/dynamic";
-
-// Dynamically import DotLottieReact to avoid SSR issues
-const DotLottieReact = dynamic(
-  () => import("@lottiefiles/dotlottie-react").then((mod) => mod.DotLottieReact),
-  { ssr: false }
-);
 
 interface LandingAnimationProps {
   onComplete?: () => void;
@@ -18,7 +11,7 @@ interface LandingAnimationProps {
 
 /**
  * Landing page animation component
- * Shows a spaceship entering the frame with a smoke trail effect via Lottie
+ * Shows a spaceship entering the frame with a smoke trail effect via Lottie (web)
  * Plays automatically on page load for approximately 2 seconds
  * Respects prefers-reduced-motion preference
  */
@@ -69,11 +62,12 @@ export function LandingAnimation({
           aria-label="Spaceship intro animation"
         >
           <div className="w-full h-full flex items-center justify-center">
-            <DotLottieReact
-              src="https://lottie.host/848d978a-0459-42e3-9cbd-fe195e0353bc/apccbJuWZ7.lottie"
-              loop={false}
-              autoplay
-              className="w-full h-full"
+            {/* Lottie animation via iframe - no npm dependency needed */}
+            <iframe
+              src="https://lottie.host/embed/848d978a-0459-42e3-9cbd-fe195e0353bc/apccbJuWZ7.lottie"
+              title="Spaceship animation"
+              className="w-full h-full border-none"
+              style={{ background: "transparent" }}
             />
           </div>
         </motion.div>
