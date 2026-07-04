@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Background with Header Image and Overlay */}
       <div className="absolute inset-0 z-0">
         <OptimizedImage
-          src="/header.png"
+          src="/header.png?v=2"
           alt="Hero background with gradient overlay and glowing effects for AI portfolio"
           fill
           className="object-cover opacity-100"
