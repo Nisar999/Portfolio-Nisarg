@@ -40,23 +40,23 @@ export default function Hero() {
         {/* Removed heavy overlay - background now clearly visible */}
       </div>
 
-      {/* Animated Glowing Orbs */}
+      {/* Animated Glowing Orbs - Reduced to avoid darkening background */}
       <motion.div
         animate={!isLoading && !prefersReducedMotion ? {
           scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
+          opacity: [0.1, 0.2, 0.1],
         } : {}}
         transition={{
           duration: 8,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--blue)] rounded-full blur-[128px] opacity-30 z-0 will-change-transform"
+        className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--blue)] rounded-full blur-[128px] opacity-10 z-0 will-change-transform"
       />
       <motion.div
         animate={!isLoading && !prefersReducedMotion ? {
           scale: [1, 1.1, 1],
-          opacity: [0.2, 0.4, 0.2],
+          opacity: [0.05, 0.15, 0.05],
         } : {}}
         transition={{
           duration: 10,
@@ -64,7 +64,7 @@ export default function Hero() {
           ease: "easeInOut",
           delay: 2,
         }}
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#001a4d] rounded-full blur-[128px] opacity-20 z-0 will-change-transform"
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#001a4d] rounded-full blur-[128px] opacity-5 z-0 will-change-transform"
       />
 
       <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center max-w-6xl w-full">
@@ -88,13 +88,13 @@ export default function Hero() {
             ))}
           </h1>
 
-          <div className="text-xl md:text-2xl text-[var(--blue)] font-medium mb-6 h-[60px]">
+          <div className="text-xl md:text-2xl text-green-400 font-medium mb-6 h-[60px]">
             {!isLoading && (
               <Typewriter
                 options={{
                   strings: [
                     "AI Engineer",
-                    "Computer Vision Specialist",
+                    "Computer Vision Enthusiast",
                     "NLP Researcher",
                     "Community Leader",
                   ],
@@ -141,7 +141,7 @@ export default function Hero() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full blur-3xl bg-gradient-to-tr from-[var(--blue)] to-[#001a4d] opacity-40 animate-pulse -z-10" />
 
           <OptimizedImage
-            src="/nisarg.png"
+            src="/Nisarg_Hero.png"
             alt="Nisarg Chauhan, AI Engineer and Computer Vision Specialist, professional portrait in professional attire"
             width={350}
             height={350}
