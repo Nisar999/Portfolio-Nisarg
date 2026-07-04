@@ -36,7 +36,7 @@ export default function Hero() {
           className="object-cover opacity-100"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--bg)]/50 to-[var(--bg)]" /> {/* Reduced overlay opacity */}
+        {/* Removed heavy overlay - background now clearly visible */}
       </div>
 
       {/* Animated Glowing Orbs */}
@@ -63,7 +63,7 @@ export default function Hero() {
           ease: "easeInOut",
           delay: 2,
         }}
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--purple)] rounded-full blur-[128px] opacity-20 z-0 will-change-transform"
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#001a4d] rounded-full blur-[128px] opacity-20 z-0 will-change-transform"
       />
 
       <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center max-w-6xl w-full">
@@ -136,8 +136,8 @@ export default function Hero() {
           {/* Glassmorphic Background Circle (Restored) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] z-0" />
 
-          {/* Animated Gradient Glow */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full blur-3xl bg-gradient-to-tr from-[var(--blue)] to-[var(--purple)] opacity-40 animate-pulse -z-10" />
+          {/* Animated Gradient Glow - Space Navy Blue */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full blur-3xl bg-gradient-to-tr from-[var(--blue)] to-[#001a4d] opacity-40 animate-pulse -z-10" />
 
           <OptimizedImage
             src="/nisarg.png"
