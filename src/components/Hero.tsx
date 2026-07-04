@@ -88,7 +88,7 @@ export default function Hero() {
             ))}
           </h1>
 
-          <div className="text-xl md:text-2xl text-green-600 font-medium mb-6 h-[60px]">
+          <div className="text-xl md:text-2xl font-medium mb-6 h-[60px]" style={{ color: "#01796f" }}>
             {!isLoading && (
               <Typewriter
                 options={{
